@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #212121;
+    box-shadow: 0px 3px 10px #000000
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo {
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+.list {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#item {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 25px;
+}
+.btn {
+    align-items: center;
+    display: flex;
+}
+#btn-item {
+    color: #212121;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.mobile-menu {
+    display: none;
+}
+.mobile-menu-icon {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .list {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button{
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu #item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-btn #mobile-btn-item{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu #mobile-btn-item button {
+        width: 100%;
+    }
+}
+
+/* Aqui começa a parte do corpo da home page */
+
+main {
+    background-color: #ffffff;
+}
+
+.texto-principal {
+    padding: 150px 200px;
+}
+.titulo-p {
+    font-size: 40px;
+    margin: 0px 45% 0px 0%;
+}
+.paragrafo-p {
+    margin: 20px 59% 0px 0%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn-p {
+    align-items: center;
+    display: flex;
+}
+.btn-p a{
+    color: #fff;
+    background-color: #212121;
+    text-decoration: none;
+    padding: 15px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
